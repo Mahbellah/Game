@@ -145,3 +145,21 @@ player.addEventListener("collide", function(e) {
         alert ("Congratulagtions, you won. But you still can not leave this maze!")
     }
 });
+   
+function w() {
+    var e = new Event("keydown");
+    e.key="w";    // just enter the char you want to send 
+    e.keyCode=e.key.charCodeAt(0);
+    e.which=e.keyCode;
+    e.altKey=false;
+    e.ctrlKey=true;
+    e.shiftKey=false;
+    e.metaKey=false;
+    e.bubbles=true;  
+    document.dispatchEvent(e);
+}
+
+document.addEventListener('touchstart', e=>{
+    e.preventDefault()
+    w()
+})
