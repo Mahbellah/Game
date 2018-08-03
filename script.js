@@ -143,6 +143,7 @@ player.addEventListener("collide", function(e) {
         laugh.play()
         console.log("Wizard!!!")
         alert ("Congratulagtions, you won. But you still can not leave this maze!")
+        location.reload()
     }
 });
    
