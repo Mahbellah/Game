@@ -113,7 +113,7 @@ staticSword.addEventListener('collide', e => {
 window.addEventListener('click', e => {
     if (swordon==1) {
         swoosh.play()
-        player.innerHTML = `<a-cursor></a-cursor><a-entity static-body gblock="https://poly.google.com/view/aL08hxEjBS7" scale="2 2 2" position="0.6 -3.5 -1.4" id="Sword" rotation="0 -140 0"><a-animation attribute="rotation" from="0 -140 0" to="90 -140 0" dur="1000"></a-animation><a-animation attribute="rotation" from="0 -140 0" to="90 -140 0" dur="1000" direction="reverse" begin="1000" ></a-animation></a-entity>`
+        player.innerHTML = `<a-cursor></a-cursor><a-entity static-body gblock="https://poly.google.com/view/aL08hxEjBS7" scale="2 2 2" position="0.6 -3.5 -1.4" id="Sword" rotation="0 -140 0"><a-animation attribute="rotation" from="0 -140 0" to="90 -140 0" dur="1000"></a-animation><a-animation attribute="rotation" from="0 -140 0" to="90 -140 0" dur="1000" direction="reverse" begin="1000" look-controls ></a-animation></a-entity>`
         //         player.innerHTML += `<a-animation attribute="rotation" from="0 -140 0" to="-90 -140 0" dur="1000"></a-animation>`
     }
 
