@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    </head>
+    <body>
+    
+        
+        
+        <a-scene>
+            <a-assets>
+                <a-asset-item src="images/magmaTexture.jpg" id="magma"></a-asset-item>
+            </a-assets>
+            
+            <a-plane static-body width="100" height="100" src="#magma" id="plane" rotation="-90 0 0"></a-plane>
+            <a-sky color="lightblue" id="sky"></a-sky>
+        <a-entity class="player" id="player"
+            camera
+           jump-ablity
+            universal-controls
+            kinematic-body
+            position="1 4 2">
+            <cursor></cursor>
+        </a-entity>
+            <a-entity scale=".008 .006 .008" static-body position="5 3 -2" id="monster id=monster2" > </a-entity>
+        </a-scene>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
